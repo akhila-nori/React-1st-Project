@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const jsxHeading = <h1 id="akhila">This is heading - React Element</h1>;
-root.render(jsxHeading);
-
 const HeadingComponent = () => {
-  return <h1>HELLO FUNCTIONAL COMPONENT - AKHILA</h1>;
+  return (
+    <div id="akhila">
+      <h1>HELLO FUNCTIONAL COMPONENT - AKHILA</h1>
+    </div>
+  );
 };
 
-const fn = () => true;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent />);
