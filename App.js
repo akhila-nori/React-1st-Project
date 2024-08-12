@@ -1,30 +1,11 @@
-// {
-/* <div id="parent">
-     <div id="child">
-        <h1>Hey, I'm h1 tag sibling of h2 tag and child of div id child </h1>
-        <h2>Hey, I'm h2 tag sibling of h1 tag and child of div id child </h2>
-     </div>
-   </div> */
-// }
-
-// code this up and create a REACT DOM for the above - sibling - convert into array of different children
-//and wrap the siblings inside the square brackets
-
-//here the 3rd argument is the children that you have to pass in
-
 import React from "react";
 import ReactDOM from "react-dom";
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "akhila" }, [
-    React.createElement("h1", {}, "Hey, I'm h1 tag"),
-    React.createElement("h2", {}, "Hey, I'm h2 tag"),
-  ])
-);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
-console.log("printing parent ......", parent);
 
-// const jsxHeading = <h1 id="akhila">This is heading - React Element</h1>;
-// root.render(jsxHeading)
+const jsxHeading = <h1 id="akhila">This is heading - React Element</h1>;
+root.render(jsxHeading);
+
+const HeadingComponent = () => {
+  return <h1>HELLO FUNCTIONAL COMPONENT - AKHILA</h1>;
+};
+
+const fn = () => true;
