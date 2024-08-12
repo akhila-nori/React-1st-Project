@@ -12,8 +12,8 @@
 
 //here the 3rd argument is the children that you have to pass in
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 const parent = React.createElement(
   "div",
   { id: "parent" },
@@ -22,10 +22,9 @@ const parent = React.createElement(
     React.createElement("h2", {}, "Hey, I'm h2 tag"),
   ])
 );
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(parent);
+console.log("printing parent ......", parent);
 
-//JSX
-console.log(parent);
-
-
-
-
+// const jsxHeading = <h1 id="akhila">This is heading - React Element</h1>;
+// root.render(jsxHeading)
