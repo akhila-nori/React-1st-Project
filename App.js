@@ -1,37 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-//React element / simply javascript variable
-const elem = (
-  <span>
-    React Element
-    <br />
-  </span>
-);
+const HeaderComponent = () => {
+  return (
+    <div className="headerCSS">
+      <div className="logo-conatiner">
+        <img
+          className="logo324grht"
+          src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/25539c29532269.55f7d6a0a8c71.jpg"
+        />
+      </div>
 
-const title = (
-  <h1 tabIndex="5">
-    {elem}
-    Namaste React inside title javascript object
-  </h1>
-);
-
-const TitleComponent = () => {
-  return <h2 id="anila">Hello title component</h2>;
+      <div className="nav-items1">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
 };
 
-const number = 10000;
-
-const HeadingComponent = () => {
+const AppLayout = () => {
   return (
-    <div id="akhila">
-      {title}
-      <h2>{number}</h2>
-      <TitleComponent />
-      <h1>HELLO FUNCTIONAL COMPONENT - AKHILA</h1>
+    <div className="app">
+      <HeaderComponent />
     </div>
   );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);
