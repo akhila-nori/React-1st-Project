@@ -23,10 +23,29 @@ const HeaderComponent = () => {
   );
 };
 
+const RestrauntCard = () => {
+  return (
+    <div className="res-card">
+       <h3>Meghana Foods</h3>
+    </div>
+  )
+}
+const BodyComponent = () => {
+  return (
+    <div className="bodyCss">
+      <div className="searchCss">Search</div>
+      <div className="res-conatiner">
+        <RestrauntCard />
+      </div>
+    </div>
+  );
+}
+
 const AppLayout = () => {
   return (
     <div className="app">
       <HeaderComponent />
+      <BodyComponent />
     </div>
   );
 };
